@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar color="danger" expand="md">
+				<Navbar color="danger" fixed={'top'} expand="md">
 		          <NavbarToggler onClick={this.toggle} />
 		          <Collapse isOpen={this.state.isOpen} navbar>
 		            <Nav className="mr-auto" navbar>

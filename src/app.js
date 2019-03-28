@@ -16,10 +16,9 @@ export default class App extends React.Component {
 
 	render() {
 		return (
+			<div>
 			<Router>
-				<div>
-					<Navigation />
-				</div>
+				<Navigation />
 				<Switch>
 					<Route exact path='/categories' component={Categories} />
 					<Route exact path='/' component={Restaurants} />
@@ -28,6 +27,7 @@ export default class App extends React.Component {
 					<Route exact path='/you' component={Account} />
 				</Switch>
 			</Router>
+			</div>
 		);
 	}
 }
