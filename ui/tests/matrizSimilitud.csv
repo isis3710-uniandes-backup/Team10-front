@@ -1,0 +1,16 @@
+;Tipo de comida;Platos;Ubicación (zona);Restaurantes favoritos;Platos favoritos;Información nutricional (Macros);Historial de búsqueda de restaurantes;Reviews;Frecuencia de personas;Restaurante del día;Platos destacados;Reviews;Horario;Precio;Plato del día
+Tipo de comida;;90;90;60;40;60;20;10;30;60;50;50;40;40;30
+Platos;90;;80;50;50;60;20;10;30;50;60;50;50;30;40
+Ubicación (zona);90;80;;50;30;50;10;20;40;50;40;40;50;40;30
+Restaurantes favoritos;60;50;50;;70;50;60;10;10;50;50;40;20;30;0
+Platos favoritos;40;50;30;70;;60;60;30;10;20;50;40;40;20;10
+Información nutricional (Macros);60;60;50;50;60;;50;30;30;30;30;30;40;30;20
+Historial de búsqueda de restaurantes;20;20;10;60;60;50;;50;40;30;40;40;20;10;0
+Reviews;10;10;20;10;30;30;50;;60;0;10;50;40;10;0
+Frecuencia de personas;30;30;40;10;10;30;40;60;;40;30;40;40;10;30
+Restaurante del día;60;50;50;50;20;30;30;0;40;;50;30;20;40;50
+Platos destacados;50;60;40;50;50;30;40;10;30;50;;40;30;20;40
+Reviews;50;50;40;40;40;30;40;50;40;30;40;;20;10;10
+Horario;40;50;50;20;40;40;20;40;40;20;30;20;;60;30
+Precio;40;30;40;30;20;30;10;10;10;40;20;10;60;;50
+Plato del día;30;40;30;0;10;20;0;0;30;50;40;10;30;50;
