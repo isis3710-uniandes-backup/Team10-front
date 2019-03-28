@@ -20,6 +20,12 @@ export default class NewRestaurants extends React.Component {
                                 </div>
                             </div>
                             <div className="form-group">
+                                <label className="col-md-4 control-label">Description</label>
+                                <div className="col-md-8 inputGroupContainer">
+                                    <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span><input id="description" name="description" placeholder="Description of the restaurant" className="form-control" required="true" value="" type="text"/></div>
+                                </div>
+                            </div>
+                            <div className="form-group">
                                 <label className="col-md-4 control-label">Address Line</label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-home"></i></span><input id="addressLine" name="addressLine" placeholder="Address Line" className="form-control" required="true" value="" type="text"/></div>
