@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Promotions extends React.Component {
+export default class Discounts extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -8,7 +8,7 @@ export default class Promotions extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Bienvenido a Promotions</h1>
+				<h1>Bienvenido a Discounts</h1>
 			</div>
 		);
 	}
