@@ -36,8 +36,8 @@ export default class Restaurants extends React.Component {
 		return (
 			<Container style={{'min-width':'100vw','margin':'0'}}>
 				<Row>
-					<Col xs="2"><Filter onFilter = {this.onFilter} filter={this.state.filter}/></Col>
-					<Col xs="10">{this.state.restaurants.length==0?this.getLoading():<RestaurantList filter={this.state.filter} restaurants={this.state.restaurants}/>}</Col>
+					<Col xs="4"><Filter onFilter = {this.onFilter} filter={this.state.filter}/></Col>
+					<Col xs="8">{this.state.restaurants.length==0?this.getLoading():<RestaurantList filter={this.state.filter} restaurants={this.state.restaurants}/>}</Col>
 				</Row>
 			</Container>
 		);
