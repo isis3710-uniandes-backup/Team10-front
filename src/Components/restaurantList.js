@@ -7,14 +7,16 @@ export default class RestaurantList extends React.Component {
 	constructor(props) {
 		super(props);
 	}
-	createRestaurant = (restaurant) => <Restaurant />;
+	createRestaurant = (restaurant) => <Restaurant res={restaurant}/>;
 	render() {
 		return (
+			<div className="scrollable">
 			<Container>
 				<Row>
 					{this.props.restaurants.map(this.createRestaurant)}
 				</Row>
 			</Container>
+			</div>
 		);
 	}
 }
