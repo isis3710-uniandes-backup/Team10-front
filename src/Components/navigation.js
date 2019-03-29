@@ -45,7 +45,7 @@ export default class Navigation extends React.Component {
                                 <NavItem>
                                     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle_menu}>
                                         <DropdownToggle caret>
-                                            Dropdown
+                                            Categories
                                         </DropdownToggle>
                                         <DropdownMenu>
                                             <DropdownItem>Fast food</DropdownItem>

@@ -11,7 +11,7 @@ export default class NewRestaurants extends React.Component {
                     <div className="page-header">
                         <h1>Sign up your restaurant</h1>
                     </div>
-                    <form className="well form-horizontal">
+                    <form className="well form-horizontal" action="http://localhost:3001/restaurants/create" method="POST">
                         <fieldset>
                             <div className="form-group">
                                 <label className="col-md-4 control-label">Full Name</label>
