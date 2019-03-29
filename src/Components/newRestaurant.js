@@ -11,7 +11,7 @@ export default class NewRestaurants extends React.Component {
                     <div className="page-header">
                         <h1>Sign up your restaurant</h1>
                     </div>
-                    <form className="well form-horizontal" action="http://localhost:3001/restaurants/create" method="POST">
+                    <form className="well form-horizontal" action="http://localhost:3001/restaurants/create" method="POST" id="contact-form">
                         <fieldset>
                             <div className="form-group">
                                 <label className="col-md-4 control-label">Full Name</label>
@@ -49,13 +49,13 @@ export default class NewRestaurants extends React.Component {
                             <div className="form-group">
                                 <label className="col-md-4 control-label">Email</label>
                                 <div className="col-md-8 inputGroupContainer">
-                                    <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" className="form-control" required={true } defaultValue="" type="text"/></div>
+                                    <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" className="form-control" required={true } defaultValue="" type="email"/></div>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label className="col-md-4 control-label">Phone Number</label>
                                 <div className="col-md-8 inputGroupContainer">
-                                    <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" className="form-control" required={true } defaultValue="" type="text"/></div>
+                                    <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" className="form-control" required={true } defaultValue="" type="tel"/></div>
                                 </div>
                             </div>
                             <div className="form-group">
@@ -64,6 +64,7 @@ export default class NewRestaurants extends React.Component {
                             </div>
                         </fieldset>
                     </form>
+                    <div class="messages"></div>
                 </div>
                 );
     }
