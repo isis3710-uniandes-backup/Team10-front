@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Team10-back
 
-## Available Scripts
+## Problema
+Diariamente, los estudiantes de las  universidades se enfrentan a la problemática de que no saben que almorzar con el presupuesto diario  que tienen. Para los estudiantes es de suma importancia almorzar platos ricos y nutritivos tratando de ahorrar al máximo su presupuesto.  La mayoría de los estudiantes de las universidades no conocen todos los restaurantes alrededor de sus instituciones y sumado a esto no conocen los valores de los platos que dichos restaurantes venden.
 
-In the project directory, you can run:
+## Descripción del proyecto
+Una aplicación web la cual ayuda a los estudiantes de las universidades a encontrar los restaurantes que tenga los platos más acordes a su presupuesto. Esto se podrá realizar mediante un filtro por precios y los restaurantes que estén acorde al presupuesto de cada alumno aparecerán ordenados en orden descendente. Además, los estudiantes podrán organizar los platos de los restaurantes dependiendo de sus necesidades nutricionales y de la calificación de los usuarios con respecto a que tan rico es dicho plato. Finalmente, los estudiantes podrán ver en un mapa los restaurantes que están cerca a sus institución universitaria.
 
-### `npm start`
+## Tareas a realizar por un usuario.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Proponer un nuevo restaurante.
+- Buscar resturantes por categoria.
+- Buscar restaurantes por un tope maximo de precio promedio.
+- Buscar restaurantes por un tope minimo de rating.
+- Buscar promociones.
+- Ver el menu de un restaurante.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## Despilegue
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone el repositorio:
 
-### `npm run build`
+    git clone https://github.com/isis3710-uniandes/Team10-front.git
+   
+Acceda a la carpeta app (en Windows puede usar el comando dir):
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    cd Team10-front 
+    
+Instale las dependecias requeridas:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Inicie el proyecto:
+    
+    npm start
+    
+La aplicación se desplegará en http://localhost:3000/

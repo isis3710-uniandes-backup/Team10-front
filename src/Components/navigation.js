@@ -40,13 +40,13 @@ export default class Navigation extends React.Component {
     render() {
         return (
                 <div>
-                    <Navbar color="dark" dark expand="md">
+                    <Navbar color="danger" dark expand="md">
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle_menu}>
-                                        <DropdownToggle caret>
+                                        <DropdownToggle caret color = "danger">
                                             Categories
                                         </DropdownToggle>
                                         <DropdownMenu>
