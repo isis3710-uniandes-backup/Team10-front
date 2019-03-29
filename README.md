@@ -35,3 +35,9 @@ Inicie el proyecto:
     npm start
     
 La aplicación se desplegará en http://localhost:3000/
+
+## Autores
+
+* **Nombre:** Alejandro Dorado - **Código:** 200714182
+* **Nombre:** Andrés León - **Código:** 201532885
+* **Nombre:** Juan Sosa - **Código:** 201425255
