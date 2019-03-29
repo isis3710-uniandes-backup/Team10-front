@@ -7,7 +7,15 @@ const API = "http://localhost:3001/restaurants"
 export default class Restaurants extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {"restaurants":[]};
+		console.log(props)
+		this.state = {
+			"restaurants":[],
+			"filter": {
+				category: this.props.category ? this.props.category :'All',
+				price: 100000,
+				rating: 0
+			}
+		};
 	}
 	getRestaurants(){
 		fetch(API)
@@ -20,13 +28,16 @@ export default class Restaurants extends React.Component {
 	getLoading(){
 		return (<div className="loadingContainer"><div className="loading"></div></div>)
 	}
+	onFilter = (filter)=>{
+		this.setState({...this.state,"filter": filter})
+	}
 
 	render() {
 		return (
 			<Container style={{'min-width':'100vw','margin':'0'}}>
 				<Row>
-					<Col xs="2"><Filter /></Col>
-					<Col xs="10">{this.state.restaurants.length==0?this.getLoading():<RestaurantList restaurants={this.state.restaurants}/>}</Col>
+					<Col xs="2"><Filter onFilter = {this.onFilter} filter={this.state.filter}/></Col>
+					<Col xs="10">{this.state.restaurants.length==0?this.getLoading():<RestaurantList filter={this.state.filter} restaurants={this.state.restaurants}/>}</Col>
 				</Row>
 			</Container>
 		);

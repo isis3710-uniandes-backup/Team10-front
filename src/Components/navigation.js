@@ -13,7 +13,6 @@ Collapse,
         DropdownMenu,
         DropdownItem } from 'reactstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
 export default class Navigation extends React.Component {
     constructor(props) {
         super(props);
@@ -24,6 +23,9 @@ export default class Navigation extends React.Component {
             isOpen: false,
             dropdownOpen: false
         };
+    }
+    onClick = (str)=>{
+        return (e)=> {this.props.onClick(str)}
     }
     toggle() {
         this.setState({
@@ -48,11 +50,11 @@ export default class Navigation extends React.Component {
                                             Categories
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem>Fast food</DropdownItem>
-                                            <DropdownItem>Mexican</DropdownItem>
-                                            <DropdownItem>Chinese</DropdownItem>
-                                            <DropdownItem>Typical</DropdownItem>
-                                            <DropdownItem>Fancy</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Fast food')}>Fast food</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Maxican')}>Mexican</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Chinese')}>Chinese</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Typical')}>Typical</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Fancy')}>Fancy</DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>
                                 </NavItem>
@@ -64,9 +66,6 @@ export default class Navigation extends React.Component {
                                 </NavItem>
                                 <NavItem>
                                     <Link to={'/new'} className="nav-link text-white">New restaurants</Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link to={'/you'} className="nav-link text-white">Account</Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>

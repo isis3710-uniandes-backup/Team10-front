@@ -6,15 +6,29 @@ export default class Filter extends React.Component {
 
 	constructor(props) {
 		super(props);
+		if(this.props.filter){
+			this.state = {
+				category: this.props.filter.category,
+				price: this.props.filter.price,
+				rating: this.props.filter.rating
+			}
+		}
+		else{
+			this.state = {
+				category: 'All',
+				price: '',
+				rating: 0
+			}
+		}
 	}
 	filter = (e)=>{
 		e.preventDefault();
-		//if(!isNaN() && <0){
-		//	alert("Error en el input")
-		//}
-		//else{
-		//	this.props.
-		//}
+		if(!isNaN(this.state.price) && this.state.price<0){
+			alert("Error en el input")
+		}
+		else{
+			this.props.onFilter(this.state)
+		}
 	}
 	render() {
 		return (
@@ -26,16 +40,18 @@ export default class Filter extends React.Component {
 			        <FormGroup row>
 			          <Label sm={4}>Price</Label>
 			          <Col sm={8}>
-			            <Input type="number" name="max" id="max" placeholder="max" />
+			            <Input type="number" name="max" min="0" id="max" placeholder="max" value={this.state.price}
+              			onChange={e => this.setState({ price: e.target.value })}/>
 			          </Col>
 			        </FormGroup>
 			        <FormGroup row>
 			          <Label sm={4}>Category</Label>
 			          <Col sm={8}>
-			            <Input type="select" name="category" id="category">
+			            <Input type="select" name="category" id="category" value={this.state.category} 
+			            onChange={e => this.setState({ category: e.target.value })}>
 			            	<option>All</option>
-			            	<option>Fast Food</option>
-			            	<option>Maxican</option>
+			            	<option>Fast food</option>
+			            	<option>Mexican</option>
 				            <option>Chinese</option>
 				            <option>Typical</option>
 				            <option>Fancy</option>
@@ -45,7 +61,8 @@ export default class Filter extends React.Component {
 			        <FormGroup row>
 			          <Label sm={4}>Rating</Label>
 			          <Col sm={8}>
-			            <Input type="select" name="rating" id="rating">
+			            <Input type="select" name="rating" id="rating" value={this.state.rating}
+              			onChange={e => this.setState({ rating: e.target.value })}>
 			            	<option>0</option>
 			            	<option>1</option>
 				            <option>2</option>

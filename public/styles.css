@@ -3,10 +3,14 @@
   overflow-y: scroll;
   height: 90vh;
 }
+.scrollable2 {
+  flex: 1;
+  overflow-y: scroll;
+  height: 70vh;
+}
 .loadingContainer{
 	margin: auto;
-    margin-top: auto;
-	margin-top: 30vh;
+	margin-top: 10%;
 	width: -webkit-fit-content;
   	width: -moz-fit-content;
   	width: fit-content;
