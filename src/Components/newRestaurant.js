@@ -36,8 +36,12 @@ export default class NewRestaurants extends React.Component {
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="glyphicon glyphicon-list"></i></span>
-                                        <select className="selectpicker form-control">
-                                            <option>A really long option to push the menu over the edget</option>
+                                        <select name="category" className="selectpicker form-control">
+                                            <option>Fast food</option>
+                                            <option>Mexican</option>
+                                            <option>Chinese</option>
+                                            <option>Typical</option>
+                                            <option>Fancy</option>
                                         </select>
                                     </div>
                                 </div>

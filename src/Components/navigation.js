@@ -48,7 +48,11 @@ export default class Navigation extends React.Component {
                                             Dropdown
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem>Some Action</DropdownItem>
+                                            <DropdownItem>Fast food</DropdownItem>
+                                            <DropdownItem>Mexican</DropdownItem>
+                                            <DropdownItem>Chinese</DropdownItem>
+                                            <DropdownItem>Typical</DropdownItem>
+                                            <DropdownItem>Fancy</DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>
                                 </NavItem>
