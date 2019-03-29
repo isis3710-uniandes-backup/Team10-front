@@ -1,4 +1,4 @@
-# Team10-back
+# Team10-front
 
 ## Problema
 Diariamente, los estudiantes de las  universidades se enfrentan a la problemática de que no saben que almorzar con el presupuesto diario  que tienen. Para los estudiantes es de suma importancia almorzar platos ricos y nutritivos tratando de ahorrar al máximo su presupuesto.  La mayoría de los estudiantes de las universidades no conocen todos los restaurantes alrededor de sus instituciones y sumado a esto no conocen los valores de los platos que dichos restaurantes venden.
