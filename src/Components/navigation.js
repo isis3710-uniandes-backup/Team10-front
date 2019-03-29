@@ -32,13 +32,13 @@ export default class Navigation extends React.Component {
     }
     toggle_menu() {
         this.setState(prevState => ({
-                dropdownOpen: !prevState.dropdownOpen
+                dropdownOpen: !this.state.dropdownOpen
             }));
     }
     render() {
         return (
                 <div>
-                    <Navbar color="danger" expand="md">
+                    <Navbar color="dark" dark expand="md">
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
