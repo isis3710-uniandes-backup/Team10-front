@@ -12,7 +12,7 @@ constructor(props) {
 			  <Card>
                 <CardImg top width="100%" src={this.props.discounts.image} alt="Card image cap" />
                 <CardBody>
-                  <CardTitle>{this.props.discounts.dish}</CardTitle>
+                  <CardTitle tag="h1">{this.props.discounts.dish}</CardTitle>
                   <CardSubtitle>{this.props.discounts.restaurant}</CardSubtitle>
                   <CardText>{this.props.discounts.price}</CardText>
                 </CardBody>

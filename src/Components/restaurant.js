@@ -35,7 +35,7 @@ export default class Restaurant extends React.Component {
 		return (
 			<Col lg = "3" md = "4" sm = "6" xs = "12">
 			 <Card style={divStyle}>
-		        <CardHeader tag="h3">{this.props.res.name}</CardHeader>
+		        <CardHeader tag="h1">{this.props.res.name}</CardHeader>
 		                <CardImg top width="100%" src={this.props.res.image} alt={this.props.res.name} />
 		        <CardBody>
 		          <CardText><strong>Category: </strong>{this.props.res.category}</CardText>

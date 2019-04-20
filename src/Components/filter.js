@@ -40,14 +40,14 @@ export default class Filter extends React.Component {
 			        <FormGroup row>
 			          <Label sm={4}>Price</Label>
 			          <Col sm={8}>
-			            <Input type="number" name="max" min="0" id="max" placeholder="max" value={this.state.price}
+			            <Input type="number" name="max" aria-label="Price Input" min="0" id="max" placeholder="max" value={this.state.price}
               			onChange={e => this.setState({ price: e.target.value })}/>
 			          </Col>
 			        </FormGroup>
 			        <FormGroup row>
 			          <Label sm={4}>Category</Label>
 			          <Col sm={8}>
-			            <Input type="select" name="category" id="category" value={this.state.category} 
+			            <Input type="select" name="category" aria-label="Category Input" id="category" value={this.state.category} 
 			            onChange={e => this.setState({ category: e.target.value })}>
 			            	<option>All</option>
 			            	<option>Fast food</option>
@@ -61,7 +61,7 @@ export default class Filter extends React.Component {
 			        <FormGroup row>
 			          <Label sm={4}>Rating</Label>
 			          <Col sm={8}>
-			            <Input type="select" name="rating" id="rating" value={this.state.rating}
+			            <Input type="select" name="rating" aria-label="Rating Input" id="rating" value={this.state.rating}
               			onChange={e => this.setState({ rating: e.target.value })}>
 			            	<option>0</option>
 			            	<option>1</option>
