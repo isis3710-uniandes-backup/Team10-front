@@ -20,6 +20,9 @@
   width: 64px;
   height: 64px;
 }
+body {
+  font-family: 'Titillium Web', sans-serif
+}
 .loading:after {
   content: " ";
   display: block;
