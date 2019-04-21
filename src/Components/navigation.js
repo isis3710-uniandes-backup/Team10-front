@@ -47,7 +47,7 @@ export default class Navigation extends React.Component {
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle_menu}>
-                                        <DropdownToggle caret color = "danger">
+                                        <DropdownToggle caret color = "dark">
                                             <FormattedMessage id="Categories"/>
                                         </DropdownToggle>
                                         <DropdownMenu>
