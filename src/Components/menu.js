@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 import {Container,Row,Col} from 'reactstrap';
 import DishesList from './dishesList';
 const API = "http://localhost:3001/dishes"
@@ -29,8 +30,8 @@ export default class Menu extends React.Component {
 			<Container style={{'min-width':'70vw' ,'margin':'0'}}>
 				<Row>
 					<Col xs="4">
-						<p><strong>Description: </strong>{this.props.res.description}</p>
-						<p><strong>Average Price: </strong>{this.props.res.avgPrice}</p>
+						<p><strong><FormattedMessage id="Description: "/></strong>{this.props.res.description}</p>
+						<p><strong><FormattedMessage id="Average Price: "/></strong>{this.props.res.avgPrice}</p>
 					</Col>
 					<Col xs = "8">
 						{this.state.dishes.length==0?this.getLoading():<DishesList dishes={this.state.dishes.filter(this.filtered)}/>}

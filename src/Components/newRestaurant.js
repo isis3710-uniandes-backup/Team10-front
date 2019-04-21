@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {FormattedMessage} from 'react-intl';
 
 export default class NewRestaurants extends React.Component {
     constructor(props) {
@@ -35,30 +36,30 @@ export default class NewRestaurants extends React.Component {
         return (
                 <div className="container p-3">
                     <div className="page-header">
-                        <h1>Sign up your restaurant</h1>
+                        <h1><FormattedMessage id="Sign up your restaurant"/></h1>
                     </div>
                     <form className="well form-horizontal" onSubmit={(e) => this.formHandler(e, this.state.formFields)} action="">
                         <fieldset>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Full Name</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Full Name"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" aria-label="Full name input" placeholder="Full Name" className="form-control" required={true } defaultValue="" type="text" onChange={(e) => this.inputChangeHandler.call(this, e)}/></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Description</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Description"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span><input id="description" name="description" aria-label="Description input" placeholder="Description of the restaurant" className="form-control" required={true } defaultValue="" type="text" onChange={(e) => this.inputChangeHandler.call(this, e)}/></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Address Line</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Address Line"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-home"></i></span><input id="addressLine" name="addressLine" aria-label="Address line input" placeholder="Address Line" className="form-control" required={true } defaultValue="" type="text" onChange={(e) => this.inputChangeHandler.call(this, e)}/></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Category</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Category"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="glyphicon glyphicon-list"></i></span>
@@ -73,19 +74,19 @@ export default class NewRestaurants extends React.Component {
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Email</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Email"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" aria-label="Email input" placeholder="Email" className="form-control" required={true } defaultValue="" type="text" onChange={(e) => this.inputChangeHandler.call(this, e)}/></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="col-md-4 control-label">Phone Number</label>
+                                <label className="col-md-4 control-label"><FormattedMessage id="Phone Number"/></label>
                                 <div className="col-md-8 inputGroupContainer">
                                     <div className="input-group"><span className="input-group-addon"><i className="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" aria-label="Phone number input" placeholder="Phone Number" className="form-control" required={true } defaultValue="" type="text" onChange={(e) => this.inputChangeHandler.call(this, e)}/></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <button className="btn btn-lg btn-dark btn-block">Submit</button>
+                                <button className="btn btn-lg btn-dark btn-block"><FormattedMessage id="Submit"/></button>
                 
                             </div>
                         </fieldset>
