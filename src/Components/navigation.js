@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormattedMessage} from 'react-intl';
 import {
 Collapse,
         Navbar,
@@ -46,26 +47,26 @@ export default class Navigation extends React.Component {
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle_menu}>
-                                        <DropdownToggle caret color = "dark">
-                                            Categories
+                                        <DropdownToggle caret color = "danger">
+                                            <FormattedMessage id="Categories"/>
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem onClick = {this.onClick('Fast food')}>Fast food</DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Maxican')}>Mexican</DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Chinese')}>Chinese</DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Typical')}>Typical</DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Fancy')}>Fancy</DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Fast food')}><FormattedMessage id="Fast food"/></DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Maxican')}><FormattedMessage id="Mexican"/></DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Chinese')}><FormattedMessage id="Chinese"/></DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Typical')}><FormattedMessage id="Typical"/></DropdownItem>
+                                            <DropdownItem onClick = {this.onClick('Fancy')}><FormattedMessage id="Fancy"/></DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>
                                 </NavItem>
                                 <NavItem>
-                                    <Link to={'/'} className="nav-link text-white">Restaurants</Link>
+                                    <Link to={'/'} className="nav-link text-white"><FormattedMessage id="Restaurants"/></Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link to={'/discounts'} className="nav-link text-white">Discounts</Link>
+                                    <Link to={'/discounts'} className="nav-link text-white"><FormattedMessage id="Discounts"/></Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link to={'/new'} className="nav-link text-white">New restaurants</Link>
+                                    <Link to={'/new'} className="nav-link text-white"><FormattedMessage id="New restaurants"/></Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>
