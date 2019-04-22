@@ -24,5 +24,7 @@
         "Address: ":"Dirección: ",
         "Category: ":"Categoria: ",
         "Rating: ":"Puntaje: ",
+        "All":"Todos",
+        "Description of the restaurant":"Descripción del restaurante",
         "Restaurants":"Restaurantes"
 }
