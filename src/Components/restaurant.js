@@ -42,7 +42,7 @@ export default class Restaurant extends React.Component {
 		        <CardHeader tag="h4">{this.getName()}</CardHeader>
 		                <CardImg top width="100%" src={this.props.res.image} alt={this.getName()} />
 		        <CardBody>
-		          <CardText><strong><FormattedMessage id="Category: "/></strong>{this.props.res.category}</CardText>
+		          <CardText><strong><FormattedMessage id="Category: "/></strong><FormattedMessage id={this.props.res.category}/></CardText>
 		          <CardText><strong><FormattedMessage id="Address: "/></strong>{this.props.res.address}</CardText>
 		          <CardText><strong><FormattedMessage id="Description: "/></strong> {this.props.res.description.substring(0,20)+"..."}</CardText>
 		          <CardText><strong><FormattedMessage id="Rating: "/></strong><span dangerouslySetInnerHTML={{__html:this.getStars()}}></span></CardText>

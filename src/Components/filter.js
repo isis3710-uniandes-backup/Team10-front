@@ -17,7 +17,7 @@ export default class Filter extends React.Component {
             this.state = {
                 category: 'All',
                 price: '',
-                rating: 0
+                rating: 1
             }
         }
     }
@@ -62,7 +62,6 @@ export default class Filter extends React.Component {
                             <Col sm={8}>
                             <Input type="select" name="rating" aria-label="Rating Input" id="rating" value={this.state.rating}
                                    onChange={e => this.setState({rating: e.target.value})}>
-                            <option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
