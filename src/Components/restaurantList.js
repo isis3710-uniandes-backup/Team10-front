@@ -11,7 +11,7 @@ export default class RestaurantList extends React.Component {
 	filtered = (restaurant) =>{
 		if((this.props.filter.category==='All') || (this.props.filter.category === restaurant.category) )
 			if(this.props.filter.price>=restaurant.avgPrice)
-				if(this.props.filter.rating<=restaurant.rating)
+				if(this.props.filter.rating===restaurant.rating)
 					return true;
 		return false;
 	}

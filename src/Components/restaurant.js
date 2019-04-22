@@ -27,6 +27,9 @@ export default class Restaurant extends React.Component {
 		}
 		return ans;
 	}
+	getName(){
+		return this.props.res.name.substring(0,10)
+	}
 	toggle() {
     	this.setState(prevState => ({
       	modal: !prevState.modal
@@ -36,8 +39,8 @@ export default class Restaurant extends React.Component {
 		return (
 			<Col lg = "3" md = "4" sm = "6" xs = "12">
 			 <Card style={divStyle}>
-		        <CardHeader tag="h1">{this.props.res.name}</CardHeader>
-		                <CardImg top width="100%" src={this.props.res.image} alt={this.props.res.name} />
+		        <CardHeader tag="h4">{this.getName()}</CardHeader>
+		                <CardImg top width="100%" src={this.props.res.image} alt={this.getName()} />
 		        <CardBody>
 		          <CardText><strong><FormattedMessage id="Category: "/></strong>{this.props.res.category}</CardText>
 		          <CardText><strong><FormattedMessage id="Address: "/></strong>{this.props.res.address}</CardText>
