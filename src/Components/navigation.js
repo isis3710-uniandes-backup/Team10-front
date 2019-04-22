@@ -46,20 +46,6 @@ export default class Navigation extends React.Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
-                                    <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle_menu}>
-                                        <DropdownToggle caret color = "dark">
-                                            <FormattedMessage id="Categories"/>
-                                        </DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem onClick = {this.onClick('Fast food')}><FormattedMessage id="Fast food"/></DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Maxican')}><FormattedMessage id="Mexican"/></DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Chinese')}><FormattedMessage id="Chinese"/></DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Typical')}><FormattedMessage id="Typical"/></DropdownItem>
-                                            <DropdownItem onClick = {this.onClick('Fancy')}><FormattedMessage id="Fancy"/></DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                </NavItem>
-                                <NavItem>
                                     <Link to={'/'} className="nav-link text-white"><FormattedMessage id="Restaurants"/></Link>
                                 </NavItem>
                                 <NavItem>
