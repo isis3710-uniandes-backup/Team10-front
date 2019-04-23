@@ -18,6 +18,26 @@ Una aplicación web la cual ayuda a los estudiantes de las universidades a encon
 
 ## Despilegue
 
+- Backend
+
+Clone el repositorio:
+
+    git clone https://github.com/isis3710-uniandes/Team10-back.git
+   
+Acceda a la carpeta app (en Windows puede usar el comando dir):
+
+    cd Team10-back/app 
+    
+Instale las dependecias requeridas:
+
+    npm install
+
+Inicie el proyecto:
+    
+    npm start
+
+- Frontend
+
 Clone el repositorio:
 
     git clone https://github.com/isis3710-uniandes/Team10-front.git
