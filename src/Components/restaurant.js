@@ -39,7 +39,7 @@ export default class Restaurant extends React.Component {
 		return (
 			<Col lg = "3" md = "4" sm = "6" xs = "12">
 			 <Card style={divStyle}>
-		        <CardHeader tag="h4">{this.getName()}</CardHeader>
+		        <CardHeader tag="h2">{this.getName()}</CardHeader>
 		                <CardImg top width="100%" src={this.props.res.image} alt={this.getName()} />
 		        <CardBody>
 		          <CardText><strong><FormattedMessage id="Category: "/></strong><FormattedMessage id={this.props.res.category}/></CardText>
@@ -50,7 +50,7 @@ export default class Restaurant extends React.Component {
 		        </CardBody>
 		      </Card>
 		      <Modal style={{'min-width':'70vw','margin-top':'0'}} isOpen={this.state.modal} toggle={this.toggle}>
-		          <ModalHeader toggle={this.toggle}>{"Menu - "+this.props.res.name}</ModalHeader>
+		          <ModalHeader tag="h3" toggle={this.toggle}>{"Menu - "+this.props.res.name}</ModalHeader>
 		          <ModalBody>
 		          	<Menu res = {this.props.res} />
 		          </ModalBody>

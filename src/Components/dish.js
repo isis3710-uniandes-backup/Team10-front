@@ -16,7 +16,7 @@ export default class Dish extends React.Component {
 		return (
 			<Col lg = "6">
 			 <Card style={divStyle}>
-		        <CardHeader tag="h3">{this.props.dish.name}</CardHeader>
+		        <CardHeader tag="h4">{this.props.dish.name}</CardHeader>
 		                <CardImg top height="40%" src={this.props.dish.image} alt={this.props.dish.name} />
 		        <CardBody>
 		          <CardText><strong><FormattedMessage id="Description: "/></strong> {this.props.dish.description.substring(0,20)+"..."}</CardText>

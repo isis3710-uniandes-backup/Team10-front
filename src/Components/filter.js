@@ -32,9 +32,9 @@ export default class Filter extends React.Component {
     render() {
         return (
                 <div>
-                    <h4 style={{'text-align': 'center'}}>
+                    <h1 style={{'text-align': 'center'}}>
                         <FormattedMessage id="Filter"/>
-                    </h4>
+                    </h1>
                     <Form onSubmit={this.filter}>
                         <FormGroup row>
                             <Label sm={4}><FormattedMessage id="Price"/></Label>
