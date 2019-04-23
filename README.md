@@ -62,6 +62,8 @@ Actualmente la aplicacion se encuentra desplegada en http://ec2-13-57-224-222.us
 
 Un video que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
 
+La URL donde se puede visualizar el vídeo es: https://youtu.be/_8nYuQI-PHw
+
 [![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/hqdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
 
 
