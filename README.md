@@ -6,7 +6,7 @@ Diariamente, los estudiantes de las  universidades se enfrentan a la problemáti
 ## Descripción del proyecto
 Una aplicación web la cual ayuda a los estudiantes de las universidades a encontrar los restaurantes que tenga los platos más acordes a su presupuesto. Esto se podrá realizar mediante un filtro por precios y los restaurantes que estén acorde al presupuesto de cada alumno aparecerán ordenados en orden descendente. Además, los estudiantes podrán organizar los platos de los restaurantes dependiendo de sus necesidades nutricionales y de la calificación de los usuarios con respecto a que tan rico es dicho plato. Finalmente, los estudiantes podrán ver en un mapa los restaurantes que están cerca a sus institución universitaria.
 
-## Tareas a realizar por un usuario.
+## Tareas a realizar por un usuario
 
 - Proponer un nuevo restaurante.
 - Buscar resturantes por categoria.
@@ -56,9 +56,14 @@ Inicie el proyecto:
     
 La aplicación se desplegará en http://localhost:3000/
 
+Actualmente la aplicacion se encuentra desplegada en http://ec2-13-57-224-222.us-west-1.compute.amazonaws.com:3000/ 
+
 ## Funcionamiento
 
 Un video que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
+
+La URL donde se puede visualizar el vídeo es: https://youtu.be/_8nYuQI-PHw
+
 [![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/hqdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
 
 
