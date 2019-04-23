@@ -38,8 +38,8 @@ La aplicación se desplegará en http://localhost:3000/
 
 ## Funcionamiento
 
-Un vide que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
-[![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/maxresdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
+Un video que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
+[![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/hqdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
 
 
 ## Autores
