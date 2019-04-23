@@ -58,7 +58,8 @@ La aplicación se desplegará en http://localhost:3000/
 
 ## Funcionamiento
 
-Un video que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
+El vídeo que se muestra a continuación expone todas las funcionalidades del sitio web.
+
 [![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/hqdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
 
 
