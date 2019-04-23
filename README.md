@@ -56,9 +56,11 @@ Inicie el proyecto:
     
 La aplicación se desplegará en http://localhost:3000/
 
+Actualmente la aplicacion se encuentra desplegada en http://ec2-13-57-224-222.us-west-1.compute.amazonaws.com:3000/ 
+
 ## Funcionamiento
 
-El vídeo que se muestra a continuación expone todas las funcionalidades del sitio web.
+Un video que ejemplifica el funcionamiento de la aplicación se muestra a continuación.
 
 [![Watch the video](https://img.youtube.com/vi/_8nYuQI-PHw/hqdefault.jpg)](https://youtu.be/_8nYuQI-PHw)
 
