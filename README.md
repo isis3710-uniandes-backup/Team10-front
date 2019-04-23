@@ -6,7 +6,7 @@ Diariamente, los estudiantes de las  universidades se enfrentan a la problemáti
 ## Descripción del proyecto
 Una aplicación web la cual ayuda a los estudiantes de las universidades a encontrar los restaurantes que tenga los platos más acordes a su presupuesto. Esto se podrá realizar mediante un filtro por precios y los restaurantes que estén acorde al presupuesto de cada alumno aparecerán ordenados en orden descendente. Además, los estudiantes podrán organizar los platos de los restaurantes dependiendo de sus necesidades nutricionales y de la calificación de los usuarios con respecto a que tan rico es dicho plato. Finalmente, los estudiantes podrán ver en un mapa los restaurantes que están cerca a sus institución universitaria.
 
-## Tareas a realizar por un usuario.
+## Tareas a realizar por un usuario
 
 - Proponer un nuevo restaurante.
 - Buscar resturantes por categoria.
