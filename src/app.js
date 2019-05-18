@@ -21,6 +21,17 @@ export default class App extends React.Component {
 		this.setState({category: str})
 	}
 	render() {
+            const consoleError = console.error.bind(console);
+// eslint-disable-next-line
+console.error = (message, ...args) => {
+  if (
+    typeof message === 'string' &&
+    message.startsWith('[React Intl]')
+  ) {
+    return;
+  }
+  consoleError(message, ...args);
+};
 		return (
 			<div>
 			<Router>

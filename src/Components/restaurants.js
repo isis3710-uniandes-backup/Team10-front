@@ -7,7 +7,6 @@ const API = "http://localhost:3001/restaurants"
 export default class Restaurants extends React.Component {
 	constructor(props) {
 		super(props);
-		console.log(props)
 		this.state = {
 			"restaurants":[],
 			"filter": {
