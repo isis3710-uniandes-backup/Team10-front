@@ -7,6 +7,8 @@ export default class RestaurantList extends React.Component {
 	
 	constructor(props) {
 		super(props);
+                this.state = {
+                "graph_data":[]};
 	}
 	translate(s) {
 		switch(s){
@@ -34,8 +36,12 @@ export default class RestaurantList extends React.Component {
 					return true;
 		return false;
 	}
+        getLoading(){
+		return (<div className="loadingContainer"><div className="loading"></div></div>)
+	}
 	render() {
-                            var graph_data = [];
+                            var graph_data = this.state.graph_data;
+                            graph_data = [];
                             var fast_food = 0;
                             var chinese = 0;
                             var fancy = 0;
@@ -63,9 +69,14 @@ graph_data.push({ label: 'Chinese', value: chinese });
 graph_data.push({ label: 'Fancy', value: fancy });
 graph_data.push({ label: 'Typical', value: typical });
 graph_data.push({ label: 'Mexican', value: mexican });
+if(this.state.graph_data.length==0){
+    this.setState({...this.state,"graph_data": graph_data})
+}else if(JSON.stringify(this.state.graph_data) != JSON.stringify(graph_data)){
+    this.setState({...this.state,"graph_data": graph_data})
+}
 		return (
 			<div className="scrollable">
-                <PieChart data={graph_data} />
+                {this.state.graph_data.length==0||JSON.stringify(this.state.graph_data) != JSON.stringify(graph_data)?this.getLoading():<PieChart data={this.state.graph_data} />}
 			<Container>
 				<Row>
 					{this.props.restaurants.filter(this.filtered).map(this.createRestaurant)}
