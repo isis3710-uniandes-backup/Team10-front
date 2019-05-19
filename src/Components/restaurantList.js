@@ -63,7 +63,6 @@ graph_data.push({ label: 'Chinese', value: chinese });
 graph_data.push({ label: 'Fancy', value: fancy });
 graph_data.push({ label: 'Typical', value: typical });
 graph_data.push({ label: 'Mexican', value: mexican });
-console.log(this.props.restaurants.filter(this.filtered));
 		return (
 			<div className="scrollable">
                 <PieChart data={graph_data} />
