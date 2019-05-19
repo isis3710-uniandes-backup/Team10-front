@@ -41,12 +41,12 @@ export default class Discounts extends React.Component {
 		return (
 			<Container fluid>
 			  <Row>
-			    {promotions}
+                                                            <Col sm = "12">
+                    {data==0?this.getLoading():<LineChart data={data} axisConfig={{ showXAxis: true, showXAxisLabel: true, xLabel: 'Dishes names', xLabelPosition: 'right', showYAxis: true, showYAxisLabel: false, yLabel: ''}}/>}
+                    </Col>			    
 			  </Row>
                                   <Row>
-                                  <Col sm = "12">
-                    {data==0?this.getLoading():<LineChart data={data} axisConfig={{ showXAxis: true, showXAxisLabel: true, xLabel: 'Dishes names', xLabelPosition: 'right', showYAxis: true, showYAxisLabel: false, yLabel: ''}}/>}
-                    </Col>
+{promotions}
                     </Row>
 			</Container>
 		);
