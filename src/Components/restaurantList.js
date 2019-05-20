@@ -76,7 +76,7 @@ if(this.state.graph_data.length==0){
 }
 		return (
 			<div className="scrollable">
-                {this.state.graph_data.length==0||JSON.stringify(this.state.graph_data) != JSON.stringify(graph_data)?this.getLoading():<PieChart data={this.state.graph_data} useColorScale={false} colorSchemeCategory={["#6e40aa","#c83dac","#ff5375","#ff8c38","#c9d33a","#79f659","#28ea8d","#1eb8d0","#4775de","#6e40aa"]} />}
+                {this.state.graph_data.length==0||JSON.stringify(this.state.graph_data) != JSON.stringify(graph_data)?this.getLoading():<PieChart data={this.state.graph_data} useColorScale={false} colorSchemeCategory={["#6e40aa","#c83dac","#ff5375","#ff8c38","#c9d33a","#79f659","#28ea8d","#1eb8d0","#4775de","#6e40aa"]} valueFormatter={(r)=>r} />}
 			<Container>
 				<Row>
 					{this.props.restaurants.filter(this.filtered).map(this.createRestaurant)}
