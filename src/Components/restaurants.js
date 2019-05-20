@@ -12,7 +12,7 @@ export default class Restaurants extends React.Component {
 			"filter": {
 				category: this.props.category ? this.props.category :'All',
 				price: 100000,
-				rating: 1
+				rating: 5
 			}
 		};
 	}
