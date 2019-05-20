@@ -77,6 +77,18 @@ class App extends Component {
                   </Button>
                 )
             }
+            {
+              !isAuthenticated() && (
+                  <Button
+                    id="qsLoginBtn"
+                    bsStyle="primary"
+                    className="btn-margin"
+                    onClick={this.login.bind(this)}
+                  >
+                    Registrate
+                  </Button>
+                )
+            }
         </Navbar>
       </div>
     );
