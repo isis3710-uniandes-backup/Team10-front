@@ -7,6 +7,7 @@
     "axios": "0.18.0",
     "bootstrap": "^4.3.1",
     "history": "^4.9.0",
+    "http-server": "^0.11.1",
     "react": "^16.8.5",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-charts-d3": "^2.4.1",
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-sw": "http-server -p 3000 ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
