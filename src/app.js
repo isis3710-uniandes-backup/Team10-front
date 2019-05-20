@@ -1,49 +1,86 @@
-import React from 'react';
-import Navigation from './Components/navigation'
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
-import Home from './Components/home'
-import Categories from './Components/categories'
-import Restaurants from './Components/restaurants'
-import Discounts from './Components/discounts'
-import NewRestaurant from './Components/newRestaurant'
-import Account from './Components/account'
+import React, { Component } from 'react';
+import { Navbar, Button } from 'react-bootstrap';
+import './App.css';
 
-
-export default class App extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			category: 'All'
-		}
-	}
-	onClick = (str)=>{
-		//console.log(str);
-		this.setState({category: str})
-	}
-	render() {
-            const consoleError = console.error.bind(console);
-// eslint-disable-next-line
-console.error = (message, ...args) => {
-  if (
-    typeof message === 'string' &&
-    message.startsWith('[React Intl]')
-  ) {
-    return;
+class App extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
   }
-  consoleError(message, ...args);
-};
-		return (
-			<div>
-			<Router>
-				<Navigation onClick = {this.onClick}/>
-				<Switch>
-					<Route exact path='/' render={() => <Restaurants category={this.state.category} />} />
-					<Route exact path='/discounts' component={Discounts} />
-					<Route exact path='/new' component={NewRestaurant} />
-					<Route exact path='/you' component={Account} />
-				</Switch>
-			</Router>
-			</div>
-		);
-	}
+
+  login() {
+    this.props.auth.login();
+  }
+
+  logout() {
+    this.props.auth.logout();
+  }
+
+  componentDidMount() {
+    const { renewSession } = this.props.auth;
+
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      renewSession();
+    }
+  }
+
+  render() {
+    const { isAuthenticated } = this.props.auth;
+
+    return (
+      <div>
+        <Navbar fluid>
+            <Navbar.Brand>
+              <a href="restaurants">Restaurant Finder</a>
+            </Navbar.Brand>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+              onClick={this.goTo.bind(this, 'restaurants')}
+            >
+              Home
+            </Button>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+              onClick={this.goTo.bind(this, 'discounts')}
+            >
+              Descuentos
+            </Button>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+              onClick={this.goTo.bind(this, 'new')}
+            >
+              Nuevos restaurantes
+            </Button>
+            {
+              !isAuthenticated() && (
+                  <Button
+                    id="qsLoginBtn"
+                    bsStyle="primary"
+                    className="btn-margin"
+                    onClick={this.login.bind(this)}
+                  >
+                    Log In
+                  </Button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <Button
+                    id="qsLogoutBtn"
+                    bsStyle="primary"
+                    className="btn-margin"
+                    onClick={this.logout.bind(this)}
+                  >
+                    Log Out
+                  </Button>
+                )
+            }
+        </Navbar>
+      </div>
+    );
+  }
 }
+
+export default App;
