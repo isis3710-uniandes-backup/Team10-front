@@ -61,7 +61,7 @@ class App extends Component {
                     className="btn-margin"
                     onClick={this.login.bind(this)}
                   >
-                    Log In
+                    Iniciar sesión
                   </Button>
                 )
             }
@@ -73,7 +73,7 @@ class App extends Component {
                     className="btn-margin"
                     onClick={this.logout.bind(this)}
                   >
-                    Log Out
+                    Cerrar sesión
                   </Button>
                 )
             }
