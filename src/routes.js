@@ -5,6 +5,7 @@ import Profile from './Profile/Profile';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
+import Home from './Home/Home';
 import Categories from './Components/categories';
 import Restaurants from './Components/restaurants';
 import Discounts from './Components/discounts';
@@ -23,10 +24,22 @@ export const makeMainRoutes = () => {
     <Router history={history}>
         <div>
           <Route path="/" render={(props) => <App auth={auth} {...props} />} />
+          <Route path="/accessDenied" render={(props) => <Home auth={auth} {...props} />} />
           <Route path="/restaurants" render={(props) => <Restaurants auth={auth} {...props} />} />
-          <Route path="/discounts" render={(props) => <Discounts auth={auth} {...props} />} />
-          <Route path="/new" render={(props) => <NewRestaurant auth={auth} {...props} />} />
-          <Route path="/home" render={(props) => <Discounts auth={auth} {...props} />} />
+          <Route path="/discounts" render={(props) => (
+            !auth.isAuthenticated() ? (
+              <Redirect to="/accessDenied"/>
+            ) : (
+              <Discounts auth={auth} {...props} />
+            )
+          )} />
+          <Route path="/new" render={(props) => (
+            !auth.isAuthenticated() ? (
+              <Redirect to="/accessDenied"/>
+            ) : (
+              <NewRestaurant auth={auth} {...props} />
+            )
+          )} />
           <Route path="/profile" render={(props) => (
             !auth.isAuthenticated() ? (
               <Redirect to="/home"/>

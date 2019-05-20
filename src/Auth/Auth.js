@@ -36,7 +36,7 @@ export default class Auth {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
       } else if (err) {
-        history.replace('/home');
+        history.replace('/restaurants');
         console.log(err);
         alert(`Error: ${err.error}. Check the console for further details.`);
       }
@@ -62,7 +62,7 @@ export default class Auth {
     this.expiresAt = expiresAt;
 
     // navigate to the home route
-    history.replace('/home');
+    history.replace('/restaurants');
   }
 
   renewSession() {
@@ -103,7 +103,7 @@ export default class Auth {
     });
 
     // navigate to the home route
-    history.replace('/home');
+    history.replace('/restaurants');
   }
 
   isAuthenticated() {
