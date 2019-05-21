@@ -56,6 +56,12 @@ Inicie el proyecto:
     
 La aplicación se desplegará en http://localhost:3000/
 
+Para acceder a las funcionalidades de Restaurant Finder deberá registrarse o podrá usar las siguientes credenciales:
+
+Usuario: af.leon@uniandes.edu.co
+
+Contraseña: Andres1?
+
 Actualmente la aplicacion se encuentra desplegada en http://ec2-13-57-224-222.us-west-1.compute.amazonaws.com:3000/ 
 
 ## Funcionamiento
