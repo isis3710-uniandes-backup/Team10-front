@@ -52,7 +52,7 @@ Instale las dependecias requeridas:
 
 Inicie el proyecto:
     
-    npm run build && npm run start-sw
+    npm run build && npm run start -sw
     
 La aplicación se desplegará en http://localhost:3000/
 
