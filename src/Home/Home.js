@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="container">
         {
               <h4>
-               Estás intentando acceder a una funcionalidad de los usuarios registrados. Por favor, inicia sesión para acceder a esta y a muchas funcionalidades más.
+               Estás intentando acceder a una funcionalidad de los usuarios registrados. Por favor, inicia sesión o regístrate para acceder a esta y a muchas funcionalidades más.
               </h4>
         }
       </div>

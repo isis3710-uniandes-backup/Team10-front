@@ -99,7 +99,7 @@ export default class Auth {
     localStorage.removeItem('isLoggedIn');
 
     this.auth0.logout({
-      returnTo: window.location.origin
+      returnTo: 'http://localhost:3000/restaurants'
     });
 
     // navigate to the home route
